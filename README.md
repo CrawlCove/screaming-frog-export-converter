@@ -1,3 +1,5 @@
+<a href="https://crawlcove.com/download?utm_source=github&utm_medium=readme&utm_campaign=screaming-frog-export-converter"><img src="https://raw.githubusercontent.com/CrawlCove/.github/main/banners/screaming-frog-export-converter.svg" width="1200" alt="screaming-frog-export-converter: Turn an SEO Spider internal_all.csv into the open JSON crawl export format, with a report of which columns carried over." /></a>
+
 # crawlcove-sf-import
 
 Convert a Screaming Frog SEO Spider crawl export into the [Crawl Cove crawl export format](https://github.com/CrawlCove/seo-crawl-export-spec), from the command line, with a report of exactly which columns carried over and which did not. The output validates against `crawlcove-export-spec` 1.0.0, so a Frog crawl can be loaded into [crawlcove-mcp](https://github.com/CrawlCove/seo-mcp-server)'s `load_export` for an AI assistant to query, diffed against a Crawl Cove crawl of the same site, or fed to anything else built on the spec.
