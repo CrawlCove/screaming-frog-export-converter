@@ -1,0 +1,83 @@
+{
+ "recorded": "2026-11-20T00:15:53.329Z",
+ "steps": [
+  {
+   "show": "npx github:CrawlCove/screaming-frog-export-converter internal_all.csv -o crawl.json",
+   "exit": 0,
+   "ms": 77,
+   "lines": [
+    {
+     "t": 71,
+     "text": "8 row(s) read, 7 page(s) written, 1 skipped → crawl.json"
+    },
+    {
+     "t": 71,
+     "text": "mapped: url←Address, finalUrl←Redirect URL, statusCode←Status Code, contentType←Content Type, depth←Crawl Depth, indexable←Indexability, title←Title 1, titleLength←Title 1 Length, metaDescription←Meta Description 1, metaLength←Meta Description 1 Length, canonical←Canonical Link Element 1, htmlLang←Language, robotsMeta←Meta Robots 1, xRobotsTag←X-Robots-Tag 1, wordCount←Word Count, linksInternal←Unique Outlinks, linksExternal←Unique External Outlinks, responseTimeMs←Response Time, byteSize←Size (bytes), h1Count←H1-1 + H1-2"
+    },
+    {
+     "t": 71,
+     "text": "not in this export: imageCount, imagesMissingAlt, rendered, schemaBlocks, hreflangCount, contentFingerprint, findingsCount"
+    },
+    {
+     "t": 71,
+     "text": "note: Hash ignored: Screaming Frog hashes the whole response (MD5); Crawl Cove fingerprints visible content (64-bit). Not comparable, left empty."
+    },
+    {
+     "t": 71,
+     "text": "note: h1Count is counted from the 2 H1 column(s) the Frog exports, so it is capped at 2."
+    },
+    {
+     "t": 71,
+     "text": "note: redirectHops is 1 when Redirect URI is set, else 0: the Internal export records one hop. Use the Frog's Redirect Chains report for full chains."
+    },
+    {
+     "t": 71,
+     "text": "note: linksInternal reads Unique Outlinks; the Frog counts internal outlinks there and external ones separately."
+    },
+    {
+     "t": 71,
+     "text": "note: Always empty/default (no Internal-tab source): imageCount, imagesMissingAlt (Images tab), schemaBlocks (Structured Data tab), hreflangCount (Hreflang tab), rendered (per-crawl setting), findingsCount (Crawl Cove checks have not run)."
+    },
+    {
+     "t": 71,
+     "text": "skipped line 9: non-http address \"mailto:hello@acmebakery.example\""
+    }
+   ]
+  },
+  {
+   "show": "jq -r '.pages[] | \"\\(.statusCode) \\(.url)\"' crawl.json",
+   "exit": 0,
+   "ms": 6,
+   "lines": [
+    {
+     "t": 5,
+     "text": "200 https://acmebakery.example/"
+    },
+    {
+     "t": 5,
+     "text": "200 https://acmebakery.example/about"
+    },
+    {
+     "t": 5,
+     "text": "301 https://acmebakery.example/old-menu"
+    },
+    {
+     "t": 5,
+     "text": "200 https://acmebakery.example/secret"
+    },
+    {
+     "t": 5,
+     "text": "404 https://acmebakery.example/gone"
+    },
+    {
+     "t": 5,
+     "text": "null https://acmebakery.example/slow"
+    },
+    {
+     "t": 5,
+     "text": "200 https://acmebakery.example/quoted"
+    }
+   ]
+  }
+ ]
+}

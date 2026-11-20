@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="670" viewBox="0 0 980 670" role="img" aria-label="screaming-frog-export-converter: terminal recording of npx github:CrawlCove/screaming-frog-export-converter internal_all.csv -o crawl.json; jq -r '.pages[] | &quot;\(.statusCode) \(.url)&quot;' crawl.json">
+<title>screaming-frog-export-converter: npx github:CrawlCove/screaming-frog-export-converter internal_all.csv -o crawl.json; jq -r '.pages[] | &quot;\(.statusCode) \(.url)&quot;' crawl.json</title>
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;font-size:14px;white-space:pre}
+.ln{opacity:0}
+@keyframes k0{0%,3.55%{opacity:0}3.56%,99.5%{opacity:1}100%{opacity:0}}.l0{animation:k0 11283ms linear infinite}
+@keyframes t0{0%,3.55%{width:0}17.73%,99.5%{width:701px}100%{width:0}}#c0{animation:t0 11283ms steps(83,end) infinite}
+@keyframes k1{0%,21.63%{opacity:0}21.64%,99.5%{opacity:1}100%{opacity:0}}.l1{animation:k1 11283ms linear infinite}
+@keyframes k2{0%,22.17%{opacity:0}22.18%,99.5%{opacity:1}100%{opacity:0}}.l2{animation:k2 11283ms linear infinite}
+@keyframes k3{0%,22.70%{opacity:0}22.71%,99.5%{opacity:1}100%{opacity:0}}.l3{animation:k3 11283ms linear infinite}
+@keyframes k4{0%,23.23%{opacity:0}23.24%,99.5%{opacity:1}100%{opacity:0}}.l4{animation:k4 11283ms linear infinite}
+@keyframes k5{0%,23.76%{opacity:0}23.77%,99.5%{opacity:1}100%{opacity:0}}.l5{animation:k5 11283ms linear infinite}
+@keyframes k6{0%,24.29%{opacity:0}24.30%,99.5%{opacity:1}100%{opacity:0}}.l6{animation:k6 11283ms linear infinite}
+@keyframes k7{0%,24.82%{opacity:0}24.83%,99.5%{opacity:1}100%{opacity:0}}.l7{animation:k7 11283ms linear infinite}
+@keyframes k8{0%,25.36%{opacity:0}25.37%,99.5%{opacity:1}100%{opacity:0}}.l8{animation:k8 11283ms linear infinite}
+@keyframes k9{0%,25.89%{opacity:0}25.90%,99.5%{opacity:1}100%{opacity:0}}.l9{animation:k9 11283ms linear infinite}
+@keyframes k10{0%,26.42%{opacity:0}26.43%,99.5%{opacity:1}100%{opacity:0}}.l10{animation:k10 11283ms linear infinite}
+@keyframes k11{0%,26.95%{opacity:0}26.96%,99.5%{opacity:1}100%{opacity:0}}.l11{animation:k11 11283ms linear infinite}
+@keyframes k12{0%,27.48%{opacity:0}27.49%,99.5%{opacity:1}100%{opacity:0}}.l12{animation:k12 11283ms linear infinite}
+@keyframes k13{0%,28.02%{opacity:0}28.03%,99.5%{opacity:1}100%{opacity:0}}.l13{animation:k13 11283ms linear infinite}
+@keyframes k14{0%,28.55%{opacity:0}28.56%,99.5%{opacity:1}100%{opacity:0}}.l14{animation:k14 11283ms linear infinite}
+@keyframes k15{0%,29.08%{opacity:0}29.09%,99.5%{opacity:1}100%{opacity:0}}.l15{animation:k15 11283ms linear infinite}
+@keyframes k16{0%,29.61%{opacity:0}29.62%,99.5%{opacity:1}100%{opacity:0}}.l16{animation:k16 11283ms linear infinite}
+@keyframes k17{0%,30.14%{opacity:0}30.15%,99.5%{opacity:1}100%{opacity:0}}.l17{animation:k17 11283ms linear infinite}
+@keyframes k18{0%,30.67%{opacity:0}30.68%,99.5%{opacity:1}100%{opacity:0}}.l18{animation:k18 11283ms linear infinite}
+@keyframes k19{0%,31.21%{opacity:0}31.22%,99.5%{opacity:1}100%{opacity:0}}.l19{animation:k19 11283ms linear infinite}
+@keyframes k20{0%,31.74%{opacity:0}31.75%,99.5%{opacity:1}100%{opacity:0}}.l20{animation:k20 11283ms linear infinite}
+@keyframes k21{0%,39.71%{opacity:0}39.72%,99.5%{opacity:1}100%{opacity:0}}.l21{animation:k21 11283ms linear infinite}
+@keyframes t21{0%,39.71%{width:0}53.12%,99.5%{width:456px}100%{width:0}}#c21{animation:t21 11283ms steps(54,end) infinite}
+@keyframes k22{0%,56.93%{opacity:0}56.94%,99.5%{opacity:1}100%{opacity:0}}.l22{animation:k22 11283ms linear infinite}
+@keyframes k23{0%,57.46%{opacity:0}57.47%,99.5%{opacity:1}100%{opacity:0}}.l23{animation:k23 11283ms linear infinite}
+@keyframes k24{0%,57.99%{opacity:0}58.00%,99.5%{opacity:1}100%{opacity:0}}.l24{animation:k24 11283ms linear infinite}
+@keyframes k25{0%,58.52%{opacity:0}58.53%,99.5%{opacity:1}100%{opacity:0}}.l25{animation:k25 11283ms linear infinite}
+@keyframes k26{0%,59.05%{opacity:0}59.06%,99.5%{opacity:1}100%{opacity:0}}.l26{animation:k26 11283ms linear infinite}
+@keyframes k27{0%,59.59%{opacity:0}59.60%,99.5%{opacity:1}100%{opacity:0}}.l27{animation:k27 11283ms linear infinite}
+@keyframes k28{0%,60.12%{opacity:0}60.13%,99.5%{opacity:1}100%{opacity:0}}.l28{animation:k28 11283ms linear infinite}
+</style>
+<defs><clipPath id="p0"><rect id="c0" x="39" y="68" height="20" width="0"/></clipPath><clipPath id="p21"><rect id="c21" x="39" y="488" height="20" width="0"/></clipPath></defs>
+<rect width="980" height="670" rx="12" fill="#0B0E16" stroke="#1E2533"/>
+<rect width="980" height="36" rx="12" fill="#121723"/><rect y="24" width="980" height="12" fill="#121723"/>
+<circle cx="22" cy="18" r="6" fill="#FF5C7A"/><circle cx="42" cy="18" r="6" fill="#FFB020"/><circle cx="62" cy="18" r="6" fill="#34F5C5"/>
+<text x="490" y="23" fill="#8A93A6" text-anchor="middle" style="font-size:13px">screaming-frog-export-converter</text>
+<g class="ln l0"><text x="22" y="83" fill="#22D3EE">$</text><g clip-path="url(#p0)"><text x="39" y="83" fill="#F2F5FA">npx github:CrawlCove/screaming-frog-export-converter internal_all.csv -o crawl.json</text></g></g>
+<text class="ln l1" x="22" y="103" fill="#C7CEDB">8 row(s) read, 7 page(s) written, 1 skipped → crawl.json</text>
+<text class="ln l2" x="22" y="123" fill="#FFB020">mapped: url←Address, finalUrl←Redirect URL, statusCode←Status Code, contentType←Content Type, depth←Crawl</text>
+<text class="ln l3" x="22" y="143" fill="#FFB020">  Depth, indexable←Indexability, title←Title 1, titleLength←Title 1 Length, metaDescription←Meta Description</text>
+<text class="ln l4" x="22" y="163" fill="#FFB020">  1, metaLength←Meta Description 1 Length, canonical←Canonical Link Element 1, htmlLang←Language,</text>
+<text class="ln l5" x="22" y="183" fill="#FFB020">  robotsMeta←Meta Robots 1, xRobotsTag←X-Robots-Tag 1, wordCount←Word Count, linksInternal←Unique Outlinks,</text>
+<text class="ln l6" x="22" y="203" fill="#FFB020">  linksExternal←Unique External Outlinks, responseTimeMs←Response Time, byteSize←Size (bytes), h1Count←H1-1 +</text>
+<text class="ln l7" x="22" y="223" fill="#FFB020">  H1-2</text>
+<text class="ln l8" x="22" y="243" fill="#C7CEDB">not in this export: imageCount, imagesMissingAlt, rendered, schemaBlocks, hreflangCount, contentFingerprint,</text>
+<text class="ln l9" x="22" y="263" fill="#C7CEDB">  findingsCount</text>
+<text class="ln l10" x="22" y="283" fill="#C7CEDB">note: Hash ignored: Screaming Frog hashes the whole response (MD5); Crawl Cove fingerprints visible content</text>
+<text class="ln l11" x="22" y="303" fill="#C7CEDB">  (64-bit). Not comparable, left empty.</text>
+<text class="ln l12" x="22" y="323" fill="#C7CEDB">note: h1Count is counted from the 2 H1 column(s) the Frog exports, so it is capped at 2.</text>
+<text class="ln l13" x="22" y="343" fill="#FFB020">note: redirectHops is 1 when Redirect URI is set, else 0: the Internal export records one hop. Use the Frog's</text>
+<text class="ln l14" x="22" y="363" fill="#FFB020">  Redirect Chains report for full chains.</text>
+<text class="ln l15" x="22" y="383" fill="#C7CEDB">note: linksInternal reads Unique Outlinks; the Frog counts internal outlinks there and external ones</text>
+<text class="ln l16" x="22" y="403" fill="#C7CEDB">  separately.</text>
+<text class="ln l17" x="22" y="423" fill="#C7CEDB">note: Always empty/default (no Internal-tab source): imageCount, imagesMissingAlt (Images tab), schemaBlocks</text>
+<text class="ln l18" x="22" y="443" fill="#C7CEDB">  (Structured Data tab), hreflangCount (Hreflang tab), rendered (per-crawl setting), findingsCount (Crawl Cove</text>
+<text class="ln l19" x="22" y="463" fill="#C7CEDB">  checks have not run).</text>
+<text class="ln l20" x="22" y="483" fill="#C7CEDB">skipped line 9: non-http address &quot;mailto:hello@acmebakery.example&quot;</text>
+<g class="ln l21"><text x="22" y="503" fill="#22D3EE">$</text><g clip-path="url(#p21)"><text x="39" y="503" fill="#F2F5FA">jq -r '.pages[] | &quot;\(.statusCode) \(.url)&quot;' crawl.json</text></g></g>
+<text class="ln l22" x="22" y="523" fill="#34F5C5">200 https://acmebakery.example/</text>
+<text class="ln l23" x="22" y="543" fill="#34F5C5">200 https://acmebakery.example/about</text>
+<text class="ln l24" x="22" y="563" fill="#FFB020">301 https://acmebakery.example/old-menu</text>
+<text class="ln l25" x="22" y="583" fill="#34F5C5">200 https://acmebakery.example/secret</text>
+<text class="ln l26" x="22" y="603" fill="#FF5C7A">404 https://acmebakery.example/gone</text>
+<text class="ln l27" x="22" y="623" fill="#C7CEDB">null https://acmebakery.example/slow</text>
+<text class="ln l28" x="22" y="643" fill="#34F5C5">200 https://acmebakery.example/quoted</text>
+</svg>

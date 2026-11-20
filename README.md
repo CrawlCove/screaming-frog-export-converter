@@ -1,10 +1,14 @@
 <a href="https://crawlcove.com/download?utm_source=github&utm_medium=readme&utm_campaign=screaming-frog-export-converter"><img src="https://raw.githubusercontent.com/CrawlCove/.github/main/banners/screaming-frog-export-converter.svg" width="1200" alt="screaming-frog-export-converter: Turn an SEO Spider internal_all.csv into the open JSON crawl export format, with a report of which columns carried over." /></a>
 
-# crawlcove-sf-import
+# screaming-frog-export-converter
 
-Convert a Screaming Frog SEO Spider crawl export into the [Crawl Cove crawl export format](https://github.com/CrawlCove/seo-crawl-export-spec), from the command line, with a report of exactly which columns carried over and which did not. The output validates against `crawlcove-export-spec` 1.0.0, so a Frog crawl can be loaded into [crawlcove-mcp](https://github.com/CrawlCove/seo-mcp-server)'s `load_export` for an AI assistant to query, diffed against a Crawl Cove crawl of the same site, or fed to anything else built on the spec.
+A **Screaming Frog export converter**: turn an SEO Spider crawl export (`internal_all.csv`) into the [Crawl Cove crawl export format](https://github.com/CrawlCove/seo-crawl-export-spec), from the command line, with a report of exactly which columns carried over and which did not. The output validates against `crawlcove-export-spec` 1.0.0, so a Frog crawl can be loaded into [crawlcove-mcp](https://github.com/CrawlCove/seo-mcp-server)'s `load_export` for an AI assistant to query, diffed against a Crawl Cove crawl of the same site, or fed to anything else built on the spec.
 
 Moving from Screaming Frog? [crawlcove.com/screaming-frog-alternative](https://crawlcove.com/screaming-frog-alternative?utm_source=github&utm_medium=screaming-frog-export-converter) compares the two.
+
+<img src="docs/demo.svg" width="980" alt="Terminal recording: converting a Screaming Frog internal_all.csv writes 7 pages to crawl.json and lists which columns carried over">
+
+*Recorded from a real run on the 8-row `internal_all.csv` in [tests/fixtures](tests/fixtures/internal_all.csv).*
 
 ## Install
 
@@ -99,25 +103,32 @@ A Frog configuration file is Java serialisation, not a text format, and this too
 
 ## Works with CrawlCove
 
-This converts a Frog export. [Crawl Cove](https://crawlcove.com/?utm_source=github&utm_medium=screaming-frog-export-converter), the desktop SEO crawler for Windows and Mac, produces this format natively, runs its checks on every page, ranks fixes by impact, and keeps history over time.
+This converts a Frog export. [Crawl Cove](https://crawlcove.com/?utm_source=github&utm_medium=screaming-frog-export-converter), the desktop SEO crawler, produces this format natively, runs its checks on every page, ranks fixes by impact, and keeps history over time.
 
 This repo has its own page on crawlcove.com: [Crawl Cove Screaming Frog importer](https://crawlcove.com/open-source/crawlcove-sf-import?utm_source=github&utm_medium=screaming-frog-export-converter).
 
 ## Related tools
 
-- [crawlcove-js](https://github.com/CrawlCove/seo-crawl-export-js) — `crawlcove-export`, a typed JavaScript/TypeScript library to load, query and convert Crawl Cove exports.
-- [crawlcove-sheets](https://github.com/CrawlCove/seo-audit-google-sheets) — Google Sheets add-on that turns a Crawl Cove export into an audit workbook (issues by type, pages by status, title/meta flags).
-- [crawlcove-export-spec](https://github.com/CrawlCove/seo-crawl-export-spec) — the JSON Schema this tool's output validates against.
-- [crawlcove-mcp](https://github.com/CrawlCove/seo-mcp-server) — load the converted export into Claude, Cursor and other AI assistants.
-- [crawlcove-cli](https://github.com/CrawlCove/seo-crawler-cli) — headless whole-site crawl with redirect-chain, broken-link, title and noindex checks.
-- [crawlcove-action](https://github.com/CrawlCove/seo-audit-action) — the same checks as a GitHub Action on every PR.
-- [crawlcove-schema-validator](https://github.com/CrawlCove/schema-markup-validator) — validate a page's JSON-LD against Google's required and recommended rich-result properties.
-- [crawlcove-hreflang-checker](https://github.com/CrawlCove/hreflang-checker) — check a page's or a sitemap's hreflang tags: codes, self-reference, x-default and return tags.
-- [crawlcove-sitemap-validator](https://github.com/CrawlCove/xml-sitemap-validator) — validate an XML sitemap or sitemap index against the protocol and search-engine limits.
-- [crawlcove-robots-txt-tester](https://github.com/CrawlCove/robots-txt-tester) — lint a robots.txt and test which URLs each crawler may fetch.
-- [crawlcove-redirect-chain-checker](https://github.com/CrawlCove/redirect-chain-checker) — follow every hop of a URL's redirects; flags chains, loops, HTTPS downgrades and meta refreshes.
-- [seo-chrome-extension](https://github.com/CrawlCove/seo-chrome-extension) — Chrome extension: on-page SEO check of the current tab plus AI answer visibility (which AI crawlers may read it, snippet blocks, llms.txt, extractability score).
+<!-- related:start, kept in step by CrawlCove/.github scripts/related.mjs -->
+| Repo | What it does |
+|---|---|
+| [seo-crawler-cli](https://github.com/CrawlCove/seo-crawler-cli) | Crawl a site from a script or CI. Checks status codes, redirect chains, titles, meta descriptions, H1s, canonicals, noindex and broken links, and fails the build on regressions. |
+| [seo-audit-action](https://github.com/CrawlCove/seo-audit-action) | Crawl a staging or preview URL on every pull request. Fails the check on broken links, missing titles, noindex and redirect chains, with the details as a PR comment. |
+| [seo-mcp-server](https://github.com/CrawlCove/seo-mcp-server) | Crawl a site, list SEO issues, inspect pages and find broken links from inside Claude, Cursor and other AI assistants. |
+| [claude-seo-plugin](https://github.com/CrawlCove/claude-seo-plugin) | Seven SEO skills for Claude Code backed by a real site crawl: audits, broken links, redirects, titles and fixes, from a chat. |
+| [seo-chrome-extension](https://github.com/CrawlCove/seo-chrome-extension) | On-page SEO checker with an AI visibility report: which AI crawlers can read the page, snippet blocks, llms.txt and extractability. Nothing leaves the browser. |
+| [xml-sitemap-validator](https://github.com/CrawlCove/xml-sitemap-validator) | Check a sitemap or sitemap index against the sitemaps.org protocol and search engine limits. Flags bad URLs, lastmod dates and cross-host entries. |
+| [robots-txt-tester](https://github.com/CrawlCove/robots-txt-tester) | Fetch and lint a robots.txt, test which URLs each crawler may fetch and see the deciding line. Fails deploys that block the site. |
+| [redirect-chain-checker](https://github.com/CrawlCove/redirect-chain-checker) | Follow every hop of a URL's redirects and flag chains, loops, HTTPS downgrades, meta refreshes and redirects to error pages. |
+| [hreflang-checker](https://github.com/CrawlCove/hreflang-checker) | Validate the hreflang tags on a page or across a whole XML sitemap, including self-reference, x-default and return tags. |
+| [schema-markup-validator](https://github.com/CrawlCove/schema-markup-validator) | Check every schema.org node on a page against the required and recommended properties for rich results. |
+| [seo-test-site](https://github.com/CrawlCove/seo-test-site) | A deliberately broken SEO test site with 54 planted problems and the expected findings, for testing any SEO crawler. |
+| [seo-crawl-export-spec](https://github.com/CrawlCove/seo-crawl-export-spec) | An open format for site crawl data: JSON Schema and CSV column reference, with a real sample export and a validator script. |
+| [seo-crawl-export-js](https://github.com/CrawlCove/seo-crawl-export-js) | Load, query and convert site crawl data in JavaScript and TypeScript, with typed pages, issues by type and status filters. |
+| [seo-audit-google-sheets](https://github.com/CrawlCove/seo-audit-google-sheets) | An Apps Script add-on that turns a site crawl export into an audit workbook: pages, issues by type, pages by status and title and meta flags. |
+| [wordpress-seo-connector](https://github.com/CrawlCove/wordpress-seo-connector) | Bulk-apply fixes from the Crawl Cove desktop crawler to Yoast SEO, Rank Math, SEOPress or AIOSEO, with a change log and one-click revert. |
+<!-- related:end -->
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT, see [LICENSE](LICENSE).
